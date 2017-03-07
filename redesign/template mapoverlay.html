@@ -1,0 +1,48 @@
+<noinclude>
+==Usage==
+This template includes a "hidden" div containing a map displaying the set coordinates along with a Hide Map button.  This is used to replace [[Template:DisplayMapDialog]] when the link is broke or the map tiles do not load correctly.
+
+This page or template calling this template should include a Show Map button, and the call for this template should be contained in a div with an id="mapbox".
+
+Note- "Hidden" refers to an absolute div with a page load position set to top:-1000px.  This method is used due to a glitch where adding the CSS class "hidden" or style of "display:none;" interrupts the loading and display of the map tiles.
+
+Parameters include:
+
+* '''Coordinates''' or '''coordinates''' - The coordinates to plot in the map displayed in dialog
+
+
+====Examples:====
+<!--<pre>
+{{MapOverlay
+|coordinates=39.744369, -105.152078
+}}
+</pre>
+
+{{MapOverlay
+|Coordinates=39.744369, -105.152078
+}}-->
+
+'''Usage in a sidebar, such as :'''
+Using template parameter Coordinates:
+<pre>
+<span id="show-map" class="btn btn-sm btn-primary">Show Map</span>
+<div id="mapbox">{{MapOverlay|Coordinates={{{Coordinates|}}} }}</div>
+</pre>
+
+Or, using defined coordinates:
+<pre>
+<span id="show-map" class="btn btn-sm btn-openei-primary">Show Map</span>
+<div id="mapbox">{{MapOverlay|Coordinates=39.744369, -105.152078}}</div>
+</pre>
+
+
+<span id="show-map" class="btn btn-sm btn-openei-primary">Show Map</span>
+<div id="mapbox">{{MapOverlay|Coordinates=39.744369, -105.152078}}</div>
+
+See [[Template:Organization]] to view this template in use.
+[[Category:Widgets]]
+</noinclude><includeonly>
+<div id="map-point" style="width:600px;margin:1em auto;">{{#display_point:{{{Coordinates|{{{coordinates}}}}}}}}</div>
+<div style="width:100px;margin:1em auto;"><span id="hide-map" class="btn btn-default">Hide Map</span></div>
+{{#Widget:DisplayMap}}
+</includeonly>

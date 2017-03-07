@@ -1,0 +1,173 @@
+CSS & Mediawiki Notes
+
+good nav examples - using chameleon
+    https://sailfishos.org/wiki/Main_Page
+    http://www.theplantencyclopedia.org/wiki/Main_Page
+    http://mediwikis.com/wiki/index.php/Main_Page
+
+
+do we still need these pages/templates/form?
+    http://en.openei.org/wiki/Template:DemandRateStructure
+    http://en.openei.org/wiki/Template:EnergyRateStructure
+    http://en.openei.org/wiki/Template:FlatDemandStructure
+    http://en.openei.org/wiki/Template:Utility_Rate
+    http://en.openei.org/wiki/Form:Utility_Rate
+
+
+#siteSub
+    contains css with display:block !important
+    is this really important???
+
+
+.stub
+    redesign stub
+    or... remove
+
+
+{{todo}}
+    remove this template
+    remove .todo CSS
+
+
+pages to consider for removal
+    http://en.openei.org/wiki/OpenEI:Projects
+    http://en.openei.org/wiki/OpenEI:Projects/FrontpageRedesignCSS
+    http://en.openei.org/wiki/OpenEI:TODO
+    http://en.openei.org/wiki/OpenEI:Developer_Links
+    http://en.openei.org/wiki/Widget:MainPageHelper/frontpage.css
+    http://en.openei.org/wiki/OpenEI:Projects/Geographic_Pages/Colorado
+    http://en.openei.org/wiki/OpenEI:Projects/Geographic_Pages/California
+    http://en.openei.org/wiki/Template:ExperimentalPlace
+    http://en.openei.org/wiki/Help:External_searches
+    http://en.openei.org/wiki/Template:Move
+    http://en.openei.org/wiki/Widget:MainPageHelper/frontpage.css
+
+
+table cleanup
+    prettytable
+        some latinoamerica pages
+        some help pages
+
+    cleantable
+        nepa/about
+        state pages
+
+    flat-table
+        organization pages
+        tool pages
+        mhk-export
+
+
+navbox
+    not sure where (or if) this is used
+
+
+infobox
+    used on geography pages
+
+
+medialist
+    not sure where (or if) this is used
+
+
+columns-2, columns-3, columns-4, columns-5
+        not sure where (or if) this is used
+
+
+ambox/tmbox/imbox/cmbox/ombox/fmbox/dmbox message boxes
+        not sure where (or if) this is used
+
+
+do we need to support IPA - international phoenetic alphabet?
+
+
+Geo microformat ?
+
+
+.nonumtoc / .toclimit
+    no indication of being used
+
+
+blockquote
+    only used on ~6 pages
+
+
+.nowraplinks
+    discuss this one
+
+
+.template-documentation
+    does not appear to be used
+
+
+.breadcrumb-delimiter
+    used for RAPID
+    keep in common or move to rapid-css?
+
+
+.imagemap-inline
+    does not appear to be used
+
+
+sup, sub
+    keep this styling?
+
+
+/*Simple Nav*/
+    used on SWERA
+
+
+/*wiki form styles*/
+    some of this will probably stay in here, but some may be replicated by bootstrap - so we will need to go through each rule
+
+
+/*Form Button*/
+    remove all
+
+
+CONVERT ALL .intl-btn to .btn
+    FIND BEST WAY TO PERFORM THIS
+
+
+.oe-columns
+    only used on current home page
+    target for deletion
+    will be replaced by actual bootstrap classes
+    Template:InfoBox
+
+
+.oe-offset
+    only used on current home page
+
+
+.oe-infobox
+    only used on current home page
+
+
+.intl-btn
+    migrate style where needed to individual widgets - MHK-CSS
+    replace classes w/ bootstrap classes once it is implemented
+        e.g. - show map button --> class="intl-btn sm-btn" --> class="btn btn-sm"
+
+
+
+.smwb-factbox
+    redo this styling?
+
+
+address Print to PDF button
+
+
+remove/replace FlexiBlocks for gateways
+update CSS for FlexiBlocks on geothermal feature pages (& CSS pages)
+
+
+let's rebuild the flexiblocks with material design styling
+    a good start is to copy this: https://codepen.io/sdthornton/pen/wBZdXq
+
+
+Add hack.css or hack section to common.css to track all hacks needed for quick fixes and releases.  Then we can manage these as we have availability
+
+
+
+    

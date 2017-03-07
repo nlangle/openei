@@ -1,0 +1,46 @@
+OpenEI pages checklist
+
+RAPID
+Places - states, countries, etc.
+Wind for Schools
+MHK ISDB
+Tools
+Utilities
+    utility rates
+    urdb - Utility_Rate_Database
+gateways
+organizations
+references
+nepa docs
+nepa resources
+special pages
+browse properties
+user page
+edit pages
+edit w form
+history
+semantic search
+file pages
+category pages
+property pages
+Forms
+    organizations
+    multi-template
+    contacts
+map of wind farms
+    data page
+help pages
+contributions
+CSC
+latinoamerica
+geothermal areas
+leds
+WEC-sim
+curtailment pages
+    talk to jorn
+small wind guidebook
+SWERA
+LEDSGP/DIA-Toolkit
+GeoRePORT/Protocol
+TCDB
+Small Wind Guidebook

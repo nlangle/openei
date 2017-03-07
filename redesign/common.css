@@ -1,0 +1,625 @@
+/* MediaWiki:Common.css */
+/* action menu */
+#pageLinks.no-user {
+    display: none;
+}
+
+/* positioning classes */
+.left {
+  float: left;
+}
+
+.right {
+  float:right;
+}
+
+.clear {
+  clear: both;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* override mw rules */
+#siteSub {
+  display: none !important;
+}
+
+#contentSub {
+  display: none;
+}
+
+#mw-wrapper {
+  max-width: 98%;
+  padding: 0;
+}
+
+h1.firstHeading {
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 2px;
+  /*background: rgba(255,255,255,0.75);*/
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+}
+
+.mw-body-content {
+  padding: 10px 20px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.98);
+}
+
+.catlinks {
+  min-height: 20px;
+  margin-bottom: 10px;
+  padding: 9px;
+  background: rgba(125,125,125,0.25);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+#wikiIndicators {
+  display: none;
+}
+
+/* anchor link styles */
+a, a:visited, .mw-body a.external, .mw-body a.external:visited {
+  color: #337AB7;
+}
+a:focus, a:hover, a:active, .mw-body a.external:focus, .mw-body a.external:hover, .mw-body a.external:active {
+  color: #23527C;
+}
+
+.mw-body a.external, .link-https {
+  background: url(/w/skins/OpenEI/images/external-link.png) center right no-repeat;
+  padding-right: 18px;
+}
+
+/*Edit pages*/
+.wikiEditor-ui-text {
+  font-family: monospace;
+}
+
+/*Mediawiki Notifications, Errors, Messages, etc.*/
+.permissions-errors, div.mw-warning-with-logexcerpt {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
+.permissions-errors > *, div.mw-warning-with-logexcerpt > * {
+  margin: 0px 10px;
+}
+
+div.mw-editinginterface {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+
+#mw-clearyourcache, #mw-sitecsspreview, #mw-sitejspreview, #mw-usercsspreview, #mw-userjspreview, p.smw-editpage-help {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+
+/*style mediawiki buttons to match bootstrap (btn-default)*/
+.wikiEditor-ui-buttons button, .editButtons input, #wpSave, #wpPreview, #wpDiff, input[type=button], input[type=submit], .fg-button, .smw-csv-furtherresults, #mw-returnto a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.wikiEditor-ui-buttons button:focus, .wikiEditor-ui-buttons button:hover, .editButtons input:focus, .editButtons input:hover, #wpSave:focus, #wpSave:hover, #wpPreview:focus, #wpPreview:hover, #wpDiff:focus, #wpDiff:hover, input[type=button]:focus, input[type=button]:hover, input[type=submit]:focus, input[type=submit]:hover, .fg-button:focus, .fg-button:hover, .smw-csv-furtherresults:focus, .smw-csv-furtherresults:hover, #mw-returnto a:focus, #mw-returnto a:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.fg-button .ui-icon {
+  float: right;
+}
+
+a.fg-button, .smw-csv-furtherresults a {
+  text-decoration: none !important;
+}
+
+#mw-returnto {
+  text-align: center;
+}
+
+#mw-returnto a {
+  position: relative;
+  right: -3px;
+  text-decoration: none;
+}
+
+#mw-returnto a:before {
+  content: "\f060";
+  display: inline-block;
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  float: right;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .sidebar {
+    max-width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    max-width: 35%;
+  }
+}
+
+/* Blocks / Boxes / legacy elements */
+.box {
+  position: relative;
+  float: left;
+  width: 98%;
+  margin: 0.5em;
+  padding: 5px 15px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.box h1, .box h2, .box h3 {
+  margin-top: 0;
+}
+
+/* mediawiki map elements */
+.map-list {
+  overflow: auto;
+  border: solid 1px #ccc;
+}
+
+/* Special Page back button */
+ body.ns-special #wikiIndicators {
+  display: block;
+  position: absolute;
+  height: 37px;
+  width: 37px;
+  top: -15px;
+  right: 10px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  text-align: center;
+  color: #777;
+  background: #e5e5e5;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.2s,color 0.2s;
+  -webkit-transition: background 0.2s,color 0.2s;
+}
+
+body.ns-special #wikiIndicators:before {
+  content: "\f060";
+  font-family: FontAwesome;
+  position: relative;
+  left: -1px;
+  top: 2px;
+}
+
+body.ns-special #wikiIndicators:focus, body.ns-special #wikiIndicators:hover {
+  color: #007680;
+}
+
+body.ns-special #wikiIndicators:active {
+  color: #e5e5e5;
+  background: #007680;
+}
+
+body.ns-special .mw-indicators {
+  display: none;
+}
+
+/* Bootstrap overrides */
+.mw-body input[type=checkbox], .mw-body input[type=radio] {
+  margin: 3px 3px;
+}
+
+.wikiForm span.form-control {
+    display: block;
+    height: inherit;
+    box-shadow: none;
+    border: none;
+    background: none;
+}
+
+.wikiForm span.label {
+    color: #000;
+    font-size: 1em;
+    padding: 6px 12px
+}
+
+.wikiForm span.help-block {
+    font-size: smaller;
+    font-style: italic;
+    margin: 0px 1em;
+}
+
+.wikiForm .well.reference-for-value {
+    width: 98%;
+    margin: 0 auto;
+}
+
+/*MIGRATED MEDIAWIKI:COMMON.CSS*/
+
+.openei-utility-rate-tooltip {
+vertical-align: text-bottom;
+display: inline-block;
+background-color: #DAEDE4;
+margin: 0 5px;
+}
+.utilInput{
+ overflow: hidden;
+ padding-bottom: 6px;
+}
+.utilInput input{
+ padding:0;
+ margin:0;
+}
+
+.openei-infobox {
+ width: 100%;
+}
+
+.openei-infobox th {
+ width: 30%;
+}
+
+.stub {
+ display: inline-block;
+ text-align: center;
+ font-weight: bold;
+}
+
+.stub p {
+ margin: 0;
+}
+
+.stub .fa-exclamation-triangle {
+  padding: 0 10px;
+}
+
+
+/* Margins for <ol> and <ul> */
+#content ol, #content ul, #mw_content ol, #mw_content ul {
+  margin-bottom: 0.5em;
+}
+
+
+/*flat-table class*/
+table.flat-table {
+  vertical-align:top;
+  font-size:1em;
+  text-align:left;
+  border-collapse:collapse;
+}
+table.flat-table caption {
+  height:26px;
+  font-size:1.4em;
+  color:#00b3e3;
+  text-align:left;
+  vertical-align:bottom;
+  font-weight:normal;
+  border-bottom:1px solid #72d0eb ;
+}
+table.flat-table th {
+  border-bottom:1px solid #99A4AE;
+  border-collapse:collapse;
+  padding: 5px;
+}
+table.flat-table tr {
+
+}
+table.flat-table td {
+  border-bottom:1px solid #99A4AE;
+  border-collapse:collapse;
+  font-size:0.9em;
+  padding:5px;
+}
+table.flat-table td.label {
+  font-weight: bold;
+  font-size: 1em;
+  color: #444;
+}
+table.flat-table.no-border td {
+  border:none;
+  font-size:0.9em;
+  padding:10px 5px 2px 5px;
+}
+
+
+/* Change the external link icon to an Adobe icon for all PDF files
+   in browsers that support these CSS selectors, like Mozilla and Opera */
+#content a[href$=".pdf"].external,
+#content a[href*=".pdf?"].external,
+#content a[href*=".pdf#"].external,
+#content a[href$=".PDF"].external,
+#content a[href*=".PDF?"].external,
+#content a[href*=".PDF#"].external,
+#mw_content  a[href$=".pdf"].external,
+#mw_content  a[href*=".pdf?"].external,
+#mw_content  a[href*=".pdf#"].external,
+#mw_content  a[href$=".PDF"].external,
+#mw_content  a[href*=".PDF?"].external,
+#mw_content  a[href*=".PDF#"].external {
+    background:
+        url("http://prod-http-80-800498448.us-east-1.elb.amazonaws.com/w/images/2/23/Icons-mini-file_acrobat.gif")
+        center right no-repeat;
+    padding-right: 16px;
+}
+
+/* Change the external link icon to an Adobe icon anywhere the PDFlink class
+   is used (notably Template:PDFlink). This works in IE, unlike the above. */
+#content span.PDFlink a,
+#mw_content span.PDFlink a {
+    background: url("http://prod-http-80-800498448.us-east-1.elb.amazonaws.com/w/images/2/23/Icons-mini-file_acrobat.gif")
+    center right no-repeat;
+    padding-right: 17px;
+}
+
+/* Prevent line breaks in silly places:
+   1) links when we don't want them to
+   2) HTML formulae
+   3) Ref tags with group names <ref group="Note"> --> "[Note 1]"
+*/
+.nowraplinks a, span.texhtml, sup.reference a {
+  white-space: nowrap;
+}
+
+/* Widget:ExapandableBox */
+.expandable-box-container {
+    background: #ebecee;
+    padding: 4px;
+    margin: 4px 0;
+}
+.action-togglebox {
+    padding: 0 3px;
+}
+.action-togglebox > span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #297398;
+}
+.expandable-box {
+    background: white;
+    padding: 1px 3px;
+    margin: 1px;
+}
+.toggle-arrow {
+    float: right;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+.down-arrow {
+    background: url(/w/images/f/fb/Arrow-down.png) no-repeat top left;
+}
+.up-arrow {
+    background: url(/w/images/b/ba/Arrow-up.png) no-repeat top right;
+}
+
+/* Simple Nav */
+ul.simple-nav {
+  list-style: none outside none;
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1.4em;
+}
+
+div.simple-nav-fade {
+  background: url(/w/images/6/6e/Top-fade-gray.png) top repeat-x;
+}
+
+.simple-nav li {
+  float: left;
+  padding: 0 8px;
+  margin: 0 10px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.simple-nav li > a, .simple-nav li > a:visited {
+  color: white;
+}
+.simple-nav li > a:hover {
+  text-decoration: none;
+}
+.simple-nav li > a.new {
+  color: #ba0000;
+}
+.simple-nav li > .selflink {
+  color: #99CC77;
+  font-weight: normal;
+}
+.simple-nav li:hover {
+  background: black;
+  border-left: 1px solid #777777;
+  border-right: 1px solid #777777;
+}
+
+body {
+  border:none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  border:none;
+}
+
+/* Bootstrap 3.x button styles, tweaked for mediawiki external link action */
+.btn-oe-primary>a {
+  color: #fff !important;
+  background-color: #009499 !important;
+  border-color: #008286 !important;
+}
+.btn-oe-primary>a:hover,
+.btn-oe-primary>a:focus,
+.btn-oe-primary>a:active,
+.btn-oe-primary>a.active {
+  color:#fff !important;
+  background-color:#008286 !important;
+  border-color: #00767a !important;
+}
+.btn.btn-resource>a {
+  width: 225px;
+  margin: 5px 0;
+  text-align: left;
+  font-size: 1em;
+}
+.btn-hero {
+  float:left;
+  display:inline-table;
+}
+.btn-hero>a, .btn-hero>a.external {
+  display: block;
+  min-width: 200px;
+  min-height:200px;
+  height: inherit;
+  margin: 15px 10px;
+  padding: 30px 15px !important;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  color: #006666 !important;
+  background: #fff !important;
+}
+.btn-hero>a:hover, .btn-hero>a.external:hover {
+  background-color:#E1E3DC !important;
+  text-decoration:none;
+}
+
+/* Custom Elements */
+.tile {
+  position: relative;
+  display: block;
+  height: 185px;
+  width: 285px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: filter 0.5s;
+  -webkit-transition: filter 0.5s;
+  transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+}
+
+.tile-label {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.5em;
+  color: #5a5a5a;
+  background: rgba(255,255,255,0.8);
+  transition: color 0.5s, background 0.5s;
+  -webkit-transition: color 0.5s, background 0.5s;
+}
+
+.tile.white-bg .tile-label {
+  background: rgba(238, 238, 238, .8);
+}
+
+.tile:hover .tile-label {
+  background: rgba(0, 118, 128, 0.5);
+  color: #eee;
+}
+
+/* Footer styles */
+#recommended-content {
+  display:none !important;
+}
+.special-links {
+  text-align:center;
+  background-color:#2aae2a;
+  margin:0;
+  border-radius:0 !important;
+  -webkit-box-shadow:0 6px 15px -4px #EEE;
+  box-shadow:0 6px 15px -4px #EEE;
+}
+.special-links ul>li>a {
+  color:#f1e78b;
+}
+/* ESI footer */
+#footer>div {
+  text-align:center;
+}
+#footer {
+  background-color:#2aae2a;
+  clear:both;
+  float:left;
+  width:100%;
+}
+#footer a {
+  color:#f1e78b;
+}
+#footer .credits {
+  color:#fff9ed;
+}
+#footer .footer-about {
+  padding:2px 0 7px 0;
+}

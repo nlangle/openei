@@ -1,0 +1,326 @@
+<noinclude>
+This is the 'Tool' template.  It should be called in the following format:
+<pre>
+{{Tool
+|Name=
+|Abstract=
+|Logo=
+|LogoSize=
+|Developer=
+|OpenEI/Tool/CostRange=
+|OpenEI/Tool/CostType=
+|Partner=
+|ProgramSector=
+|Sector=
+|Implementation Phase=
+|ProgramTopics=
+|ProgramResources=
+|User Interface=
+|Complexity=
+|Website=
+|Screenshot=
+|OpenEI/Tool/Regional Focus=
+|UNRegion=
+|Place=
+|OpenEI/Tool/URI=
+|OpenEI/Tool/Keyword=
+|OpenEI/Tool/Locality=
+|OpenEI/Tool/Users=
+|OpenEI/Tool/RelatedTo=
+|Coordinates=
+|References=
+|Language=
+|FinancialIncentive=
+|DeploymentSector=
+|Policies=
+|DeploymentPrograms=
+|Regulations=
+|OpenEI/PublicationDate
+|UUID=
+|Equivalent URI=
+}}
+</pre>
+Edit the page to see the template text.
+</noinclude><includeonly>
+{{Sidebar |style=padding: 10px 20px 24px 20px;
+|content={{#!:
+{|class="table openei-infobox"
+|+ Tool Summary{{#if:{{{OpenEI/Tool/URI|}}}|<span class="right" style="margin-top:-15px;">{{#Widget:ExternalLinkButton | action={{{OpenEI/Tool/URI}}} | class=btn-openei-primary | value=LAUNCH TOOL}}</span>|{{#if:{{{Equivalent URI||}}}|<span class="right" style="margin-top:-15px;">{{#Widget:ExternalLinkButton | action={{{Equivalent URI}}} | class=btn-openei-primary | value=LAUNCH TOOL}}</span>|{{#if:{{{Website|}}}|<span class="right" style="margin-top:-15px;">{{#Widget:ExternalLinkButton | action={{{Website}}} | class=btn-openei-primary | value=LAUNCH TOOL}}</span>|}}}}}}
+{{#if:{{{Name|}}}|{{#!:
+ |-
+ ! | [[Property:Name|Name]]:
+ | [[Name::{{{Name}}}]]
+}}|{{blank}}}}
+{{#if:{{{Developer|}}}|{{#!:
+ |-
+ ! | [[Property:Developer|Agency/Company<br>/Organization]]:
+ | {{#arraymap:{{{Developer|}}}|,|@@|[[Developer::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{Partner|}}}|{{#!:
+|-
+! | [[Property:Partner|Partner]]:
+| {{#arraymap:{{{Partner|}}}|,|@@|[[Partner::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{ProgramSector|}}}|{{#!:
+|-
+! | [[Property:ProgramSector|Sector]]:
+| {{#arraymap:{{{ProgramSector|}}}|,|@@|[[ProgramSector::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{Sector|}}}|{{#!:
+|-
+! | [[Property:Sector|Focus Area]]:
+| {{#arraymap:{{{Sector|}}}|,|@@|[[Sector::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{Implementation Phase|}}}|{{#!:
+|-
+! | [[Property:Implementation Phase|Phase]]:
+| {{#arraymap:{{{Implementation Phase|}}}|,|@@|[[Implementation Phase::@@]]}}
+}}|{{blank}}}}
+
+{{#if:{{{ProgramTopics|}}}|{{#!:
+|-
+! | [[Property:ProgramTopics|Topics]]:
+| {{#arraymap:{{{ProgramTopics|}}}|,|@@|[[ProgramTopics::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{ProgramResources|}}}|{{#!:
+|-
+! | [[Property:ProgramResources|Resource Type]]:
+| {{#arraymap:{{{ProgramResources|}}}|,|@@|[[ProgramResources::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{User Interface|}}}|{{#!:
+|-
+! | [[Property:User Interface|User Interface]]:
+| {{#arraymap:{{{User Interface|}}}|,|@@|[[User Interface::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{Complexity|}}}|{{#!:
+|-
+! | [[Property:ToolComplexity|Complexity/Ease of Use]]:
+| [[ToolComplexity::{{{Complexity}}}]]
+}}|{{blank}}}}
+{{#if:{{{Website|}}}|{{#!:
+|- style="word-break:break-all;"
+! | [[Property:Website|Website]]:
+| {{#ifeq:{{#sub:{{{Website}}}|0|5}}|https|[{{{Website}}} {{#sub:{{{Website}}}|8|70}} ] {{#set:Website={{{Website}}}}}
+|[{{{Website}}} {{#sub:{{{Website}}}|7|70}} ] {{#set:Website={{{Website}}} }} }}
+}}|{{blank}}}}
+{{#if:{{{StartYear|}}}| {{#!:
+|-
+! | [[Property:StartYear|Program Start]]:
+| [[StartYear::{{{StartYear}}}]]
+}}|{{blank}} }}
+{{#if:{{{EndYear|}}}| {{#!:
+|-
+! | [[Property:EndYear|Program End]]:
+| [[EndYear::{{{EndYear}}}]]
+}}|{{blank}} }}
+{{#if:{{{Place|}}}| {{#!:
+|-
+! | [[Property:Place|Country]]:
+| {{#arraymap:{{{Place|}}}|,|@@|[[Place::@@]]}}
+}}|{{blank}} }}
+
+{{#if:{{{OpenEI/Tool/Locality|}}}|{{#!:
+|-
+! | [[Property:OpenEI/Tool/Locality|Locality]]:
+| [[OpenEI/Tool/Locality::{{{OpenEI/Tool/Locality}}}]]
+}}|{{blank}}}}
+
+{{#if:{{{OpenEI/Tool/URI|}}}|{{#!:
+|- style="word-break:break-all;"
+! | [[Property:OpenEI/Tool/URI|Web Application Link]]:
+ | {{#ifeq:{{#sub:{{{OpenEI/Tool/URI}}}|0|5}}|https|[{{{OpenEI/Tool/URI}}} {{#sub:{{{OpenEI/Tool/URI}}}|8|70}} ] {{#set: OpenEI/Tool/URI={{{OpenEI/Tool/URI}}}}}
+| [{{{OpenEI/Tool/URI}}} {{#sub:{{{OpenEI/Tool/URI}}}|7|70}} ] {{#set: OpenEI/Tool/URI={{{OpenEI/Tool/URI}}} }} }}
+}}|{{blank}}}}
+
+{{#if:{{{OpenEI/Tool/Regional Focus|}}}|{{#!:
+|-
+! | [[Property:OpenEI/Tool/Regional Focus|Geographical Focus]]:
+| [[OpenEI/Tool/Regional Focus::{{{OpenEI/Tool/Regional Focus}}}]]
+}}|{{blank}}}}
+{{#if:{{{OpenEI/Tool/RelatedTo|}}}|{{#!:
+|-
+! | [[Property:OpenEI/Tool/RelatedTo|RelatedTo]]:
+| [[OpenEI/Tool/RelatedTo::{{{OpenEI/Tool/RelatedTo}}}]]
+}}|{{blank}}}}
+{{#if:{{{OpenEI/Tool/CostRange|}}}|{{#!:
+|-
+! | [[Property:OpenEI/Tool/CostRange|Cost]]:
+| [[OpenEI/Tool/CostRange::{{{OpenEI/Tool/CostRange}}}]]{{#if:{{{CostType|}}}|{{#set:OpenEI/Tool/CostType={{{CostType|}}}}}|{{blank}}}}
+}}|{{blank}}}}
+{{#if:{{{OpenEI/Tool/Keyword|}}}|{{#!:
+|-
+! | [[Property:OpenEI/Tool/Keyword|OpenEI Keyword(s)]]:
+| {{#arraymap:{{{OpenEI/Tool/Keyword|}}}|,|@@|[[OpenEI/Tool/Keyword::@@]]}}
+}}|{{blank}}}}
+{{#if:{{{TransportToolkit/Regions|}}}|{{#!:
+|-
+! | [[Property:TransportToolkit/Regions|Transport Toolkit Region(s)]]:
+| {{#arraymap:{{{TransportToolkit/Regions|}}}|,|@@|{{#set:TransportToolkit/Regions=@@}}@@}}
+}}|{{blank}}}}
+{{#if:{{{UNRegion|}}}| {{#!:
+|-
+! | [[Property:UNRegion|UN Region]]:
+| {{#arraymap:{{{UNRegion|}}}|,|@@|[[UNRegion::@@]]}}
+}} | {{#if:{{{Place|}}}|{{#!:<div style="display:none">{{#arraymaptemplate:{{{Place}}}|GetUNRegion}}</div> }}
+}} }} {{#if:{{{Coordinates|}}}| {{#set:Coordinates={{{Coordinates}}}}} | {{blank}} }}
+{{#if:{{{Coordinates|}}}|{{#!:
+|-
+!  | [[Property:Coordinates|Coordinates]]:
+| [[Coordinates::{{{Coordinates|}}}]] <span id="show-map" class="btn btn-sm btn-openei-primary">Show Map</span> <div id="mapbox">{{MapOverlay|coordinates={{{Coordinates}}} }}</div>
+}}|{{blank}}}}
+{{#if:{{{Equivalent URI|}}}|{{#!:
+ |- style="word-break:break-all;"
+ ! | [[Property:Equivalent URI|Equivalent URI]]:
+ | {{#ifeq:{{#sub:{{{Equivalent URI}}}|0|5}}|https|[{{{Equivalent URI}}} {{#sub:{{{Equivalent URI}}}|8|70}} ] {{#set: Equivalent URI={{{Equivalent URI}}}}}
+ |[{{{Equivalent URI}}} {{#sub:{{{Equivalent URI}}}|7|70}} ] {{#set: Equivalent URI={{{Equivalent URI}}} }} }}
+}}|{{blank}}}}
+{{#if:{{{Language|}}}|{{#!:
+ |-
+ ! | [[Property:Language|Language]]:
+ | [[Language::{{{Language|}}}]]
+}}|{{blank}}}}
+
+{{#if:{{{FinancialIncentive|}}}|{{#!:
+ |-
+ ! | [[Property:FinancialIncentive|Financial Incentive]]:
+ | [[FiancialIncentive::{{{FinancialIncentive|}}}]]
+}}|{{blank}}}}
+{{#if:{{{DeploymentSector|}}}|{{#!:
+ |-
+ ! | [[Property:DeploymentSector|DeploymentSector]]:
+ | [[DeploymentSector::{{{DeploymentSector|}}}]]
+}}|{{blank}}}}
+{{#if:{{{Policies|}}}|{{#!:
+ |-
+ ! | [[Property:Policies|Policies]]:
+ | [[Policies::{{{Policies|}}}]]
+}}|{{blank}}}}
+{{#if:{{{DeploymentPrograms|}}}|{{#!:
+ |-
+ ! | [[Property:DeploymentPrograms|DeploymentPrograms]]:
+ | [[DeploymentPrograms::{{{DeploymentPrograms|}}}]]
+}}|{{blank}}}}
+{{#if:{{{Regulations|}}}|{{#!:
+ |-
+ ! | [[Property:Regulations|Regulations]]:
+ | [[Regulations::{{{Regulations|}}}]]
+}}|{{blank}}}}
+{{#if:{{{PublicationDate|}}}|{{#!:
+ |-
+ ! | [[Property:OpenEI/PublicationDate|Publication Date]]:
+ | [[OpenEI/PublicationDate::{{{PublicationDate|}}}]]
+}}|{{blank}}}}
+{{#if:{{{Category|}}}|{{#arraymap:{{{Category}}}|,|@@|[[Category:@@]] | }} }}
+{{#if:{{{Screenshot|}}}| {{#!:
+|-
+| colspan="2" | [[File:{{{Screenshot}}}|center|200px|{{{Name}}} Screenshot]] {{#set:Screenshot={{{Screenshot}}} }}
+}}|{{blank}} }}
+
+{{#if:{{{References|}}}|{{#!:
+|- style="word-break:break-all;"
+! | [[Property:References|References]]:
+| {{{References}}}
+}}|{{blank}}}}
+
+{{#ifeq:{{{Developer|}}}|National Renewable Energy Laboratory|{{#arraydefine:solarnav|{{{Sector|}}}|,|}} {{#ifeq:{{#arraysearch:solarnav|Solar|0|yes|no}}|yes|{{#!:
+|-
+! | {{blank}}
+| {{#Widget:SolarToolsNavigator|direction=top-left}}
+}}|{{blank}}}}
+{{#ifeq:{{{Developer|}}}|NREL|{{#arraydefine:solarnav|{{{Sector|}}}|,|}} {{#ifeq:{{#arraysearch:solarnav|Solar|0|yes|no}}|yes|{{#!:
+|-
+! | {{blank}}
+| {{#Widget:SolarToolsNavigator|direction=top-left}}
+}}|{{blank}}}}
+|{{blank}}}}
+}}
+|}
+}}
+{{#ifeq:{{{Subcategory|}}}|Transportation Toolkits|
+{{#!:
+{|class="tooltable" style="margin-top:50px;"
+|+Related Tools
+ |-
+ | {{#ask:[[Category:Tools]] [[Category:Transportation Toolkits]]|limit=3|format=ul|order=random}}
+|}}}|
+{{#ifeq:{{{Subcategory|}}}|LEDSGP Development Impacts Assessment Toolkits|
+{{#!:
+{|class="tooltable" style="margin-top:50px;"
+|+Related Tools
+ |-
+ | {{#ask:[[Category:Tools]] [[Category:LEDSGP Development Impacts Assessment Toolkits]]|limit=3|format=ul|order=random}}
+|}}}|{{blank}}}}}}
+{{#ifeq:{{{Subcategory|}}}|Transportation Toolkits|
+{{#!:
+{|class="tooltable no-border" style="margin-top:50px;margin-bottom:75px;"
+|+Find Another Tool
+ |- style="margin-top:10px;"
+ | {{#Widget:ExternalLinkButton | class=btn-sm | action=http://en.openei.org/wiki/Transportation_Toolkit/Tools | value=FIND TRANSPORTATION TOOLS}}
+|}}}|{{blank}}}}
+}}
+<!--Place content to go in main body here-->
+<!--Logo and Abstract-->
+{{#if:{{{Logo|}}}|<div style="min-height:100px;margin-bottom:10px;">[[File:{{{Logo}}}|{{#if:{{{LogoSize|}}}|{{{LogoSize}}}|100px}}|left|Logo: {{{Name|}}}]] {{#set:Depiction=File:{{{Logo|}}}}} {{#if:{{{Abstract|}}}|<div style="color:#4F575D;font-size:0.9em;padding:10px 10px 10px 120px;">[[Abstract::{{{Abstract|}}}]]</div></div>|{{blank}}}} | {{#if:{{{Abstract|}}}|<div style="color:#4F575D;font-size:0.9em;min-height:50px;padding:10px;">[[Abstract::{{{Abstract|}}}]]</div>|{{blank}}}}}}
+
+{{#arraydefine:tool.subcategories|{{{Subcategory|}}}|,|@@|[[Subcategory::@@]]|mainlabel=-|format=array|unique}}
+<!--Transport Toolkit related sections-->
+{{#ifeq:{{#arraysearch:tool.subcategories|Transportation Toolkits|0|true|false}}|true|
+<div style="font-size:1.1em;">
+<div style="width:66%;height:63px;margin-bottom:2em;background:#F0FFF0;border:1px solid #739B65;border-radius:5px;"><div style="float:left;">[[File:LEDSGP green logo.png|120px|link=http://ledsgp.org/home]]</div><div style="width:75%;float:left;padding-left:20px;margin-top:1em;">This tool is included in the [[LEDSGP/Transportation_Toolkit|Transportation Toolkit]] from the LEDS Global Partnership.</div></div>
+{{#if:{{{TransportToolkit/KeyActions|}}}|
+{{#arraydefine:KA|{{{TransportToolkit/KeyActions|}}}|,|}}
+{{TransportToolkit-KeyActions}}
+|{{blank}}}}
+
+{{#if:{{{TransportToolkit/AvoidShiftImprove|}}}|
+{{#arraydefine:ASI|{{{TransportToolkit/AvoidShiftImprove|}}}|,|}}
+{{TransportToolkit-ASI}}
+|{{blank}}}}
+{{#if:{{{TransportToolkit/KeyActions|}}}|<hr/ style="background-color:#ddd;">|{{#if:{{{TransportToolkit/AvoidShiftImprove|}}}|<hr/ style="background-color:#ddd;">|{{blank}}}}}}
+</div>|{{blank}}}}
+<!--End Transport Toolkit related sections-->
+
+<!--DIA Related Sections-->
+{{#ifeq:{{#arraysearch:tool.subcategories|LEDSGP Development Impacts Assessment Toolkits|0|true|false}}|true|
+<div style="font-size:1.1em;">
+<div style="width:66%;height:63px;margin-bottom:2em;background:#F0FFF0;border:1px solid #739B65;border-radius:5px;"><div style="float:left;">[[File:LEDSGP green logo.png|120px|link=http://ledsgp.org/home]]</div><div style="width:75%;float:left;padding-left:20px;margin-top:1em;">This tool is included in the [[LEDSGP/DIA-Toolkit|Development Impacts Assessment (DIA) Toolkit]] from the LEDS Global Partnership.</div></div>
+{{#if:{{{DIA/Topic|}}}|{{#arraydefine:topic|{{{DIA/Topic|}}}|,|}}
+{{#if:{{{DIA/Approach|}}}|====Approach====
+{{{DIA/Approach|}}}|{{blank}}}}
+{{DIA-when-to-use|{{{DIA/Outputs|}}}}}|{{blank}}}}
+{{#if:{{{DIA/Topic|}}}|
+{{DIA-how-to-use|{{{DIA/Inputs|}}}|{{{DIA/Training|}}}|{{{Complexity|}}}}}|{{blank}}}}
+{{#if:{{{DIA/CaseStudies|}}}|{{#ifeq:{{{DIA/CaseStudies|}}}|None available.|{{blank}}|
+{{DIA-where-to-use|{{{DIA/CaseStudies|}}}|{{{Name|}}}}}|{{blank}}}}}}
+{{#if:{{{DIA/Topic|}}}|<hr/ style="background-color:#ddd;clear:left;">|{{blank}}}}
+</div>|{{blank}}}}
+<!--End DIA Related Sections-->
+
+<!--End main conent section-->
+__NOTOC__
+{{#arraymap:{{{OpenEI/Tool/Users|}}}|,|@@|{{#set:OpenEI/Tool/Users=@@|}}}}
+{{#arraymap:{{{Subcategory|}}}|,|@@|{{#set:Tool-subcategory=@@|}}}}
+{{#arraymap:{{{TransportToolkit/AvoidShiftImprove|}}}|,|@@|{{#set:TransportToolkit/AvoidShiftImprove=@@|}}}}
+{{#arraymap:{{{TransportToolkit/KeyActions|}}}|,|@@|{{#set:TransportToolkit/KeyActions=@@|}}}}
+{{#arraymap:{{{TransportToolkit/Topics|}}}|,|@@|{{#set:TransportToolkit/Topics=@@|}}}}
+{{#arraymap:{{{TransportToolkit/Type|}}}|,|@@|{{#set:TransportToolkit/Type=@@|}}}}
+{{#arraymap:{{{DIA/Topic|}}}|,|@@|{{#set:DIA/Topic=@@|}}}}
+{{#arraymap:{{{DIA/Topic/Env|}}}|,|@@|{{#set:DIA/Topic/Environmental=@@|{{#if:{{{DIA/Topic/Env|}}}|DIA/Topic/Environmental=All|{{#ifeq:{{{DIA/Topic/Env|}}}|General|DIA/Topic/Environmental=All|}}}}}}}}
+{{#arraymap:{{{DIA/Topic/Eco|}}}|,|@@|{{#set:DIA/Topic/Economic=@@|{{#if:{{{DIA/Topic/Eco|}}}|DIA/Topic/Economic=All|{{#ifeq:{{{DIA/Topic/Eco|}}}|General|DIA/Topic/Economic=All|}}}}}}}}
+{{#arraymap:{{{DIA/Topic/Soc|}}}|,|@@|{{#set:DIA/Topic/Social=@@|{{#if:{{{DIA/Topic/Soc|}}}|DIA/Topic/Social=All|{{#ifeq:{{{DIA/Topic/Soc|}}}|General|DIA/Topic/Social=All|}}}}}}}}
+{{#arraymap:{{{DIA/Level|}}}|,|@@|{{#set:DIA/Level=@@|}}}}
+{{#arraymap:{{{DIA/Type|}}}|,|@@|{{#set:DIA/Type=@@|}}}}
+{{#arraymap:{{{DIA/Stakeholders|}}}|,|@@|{{#set:DIA/Stakeholders=@@|}}}}
+{{#if:{{{DIA/Approach|}}}|{{#set:DIA/Approach={{{DIA/Approach|}}}}}|}}
+{{#if:{{{DIA/Outputs|}}}|{{#set:DIA/Outputs={{{DIA/Outputs|}}}}}|}}
+{{#if:{{{DIA/Inputs|}}}|{{#set:DIA/Inputs={{{DIA/Inputs|}}}}}|}}
+{{#if:{{{DIA/Training|}}}|{{#set:DIA/Training={{{DIA/Training|}}}}}|}}
+{{#if:{{{DIA/CaseStudies|}}}|{{#set:DIA/CaseStudies={{{DIA/CaseStudies|}}}}}|}}
+[[Category:Tools]]
+
+{{#if:{{{Subcategory|}}}|{{#arrayprint:tool.subcategories||@@|[[Category:@@]]}}|{{blank}}}}
+{{PageMeta
+ |keywords={{{Name|}}}, Energy, {{{Sector|}}}, {{{Product|}}}, {{{Region|}}}, {{{Place|}}}, {{{Developer|}}}, {{{OpenEI/Tool/Keyword|}}}
+}}
+__NOEDITSECTION__
+</includeonly>

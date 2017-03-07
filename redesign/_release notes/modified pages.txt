@@ -1,0 +1,23 @@
+MODIFIED PAGES
+list of pages that were modified on dev-upgrade3.openei.org during redesign - these edits should be copied over to production for rollout
+
+http://dev-upgrade3.openei.org/wiki/MediaWiki:Common.css
+
+http://dev-upgrade3.openei.org/wiki/Main_Page
+http://dev-upgrade3.openei.org/wiki/Widget:MainPageCSS
+http://dev-upgrade3.openei.org/wiki/Widget:FPSearch
+
+http://dev-upgrade3.openei.org/wiki/Widget:OpenEIDatasetCount
+http://dev-upgrade3.openei.org/wiki/Template:Tool
+http://dev-upgrade3.openei.org/wiki/Template:MapOverlay
+http://dev-upgrade3.openei.org/wiki/Widget:DisplayMap
+http://dev-upgrade3.openei.org/wiki/Widget:ExternalLinkButton
+
+http://dev-upgrade3.openei.org/wiki/MediaWiki:Sidebar
+
+-remove bootstrap import
+Widget:RAPID-Carousel
+Widget:RAPID-Format-Assist
+
+Template:PrintPDFButton
+Widget:PrintPDFButton
