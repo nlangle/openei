@@ -1,0 +1,30 @@
+<noinclude>__NOTOC__
+This is the '''{{SUBPAGENAME}}''' template.  It is intended for inclusion on any page where printing the page contents to a PDF is desirable.  When included on '''Category''' pages, the pressing the button will print all pages within that category.  This template requires the [[Widget:PrintPDFButton|PrintPDFButton widget]] to be functional.
+
+
+=====Parameters=====
+* ''None''
+
+
+=====Dependencies=====
+[[Widget:PrintPDFButton]]
+
+
+=====Usage=====
+It should be called in the following format:
+<pre>
+{{PrintPDFButton}}
+</pre>
+
+
+=====Example=====
+This template will produce the effect which has been added to the upper right of this page.
+{{PrintPDFButton}}
+
+Edit the page to see the template text.
+[[Category:Templates|{{BASEPAGENAME}}]]
+[[Category:Formatting Templates|{{BASEPAGENAME}}]]
+
+</noinclude><includeonly><!--<div id="printPDFButton" class="noprintpdf ui-corner-all ui-state-default" style="position:absolute;top: -30px; right: 70px;padding:5px;"><div class="print" style="padding-left:21px; width:auto;">Print PDF{{#ifeq:{{NAMESPACE}}|Category|&nbsp;Book of this Category|}}</div></div>-->
+{{#Widget:PrintPDFButton}}
+</includeonly>
