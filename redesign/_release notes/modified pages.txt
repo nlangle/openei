@@ -4,7 +4,8 @@ list of pages that were modified on dev-upgrade3.openei.org during redesign - th
 http://dev-upgrade3.openei.org/wiki/MediaWiki:Common.css
 
 http://dev-upgrade3.openei.org/wiki/Main_Page
-http://dev-upgrade3.openei.org/wiki/Widget:MainPageCSS
+http://dev-upgrade3.openei.org/wiki/Widget:MainPageCSS -- change to main page helper
+  Widget:MainPageHelper
 http://dev-upgrade3.openei.org/wiki/Widget:FPSearch
 
 http://dev-upgrade3.openei.org/wiki/Widget:OpenEIDatasetCount
@@ -21,3 +22,13 @@ Widget:RAPID-Format-Assist
 
 Template:PrintPDFButton
 Widget:PrintPDFButton
+
+
+-add fixed width widget
+Template:MHK_ISDB-Nav
+Template:RAPID-Nav
+
+-pages flagged for potential conflict
+Form:RAPID-Overview(Tech-Jurisdiction-Topic)
+Template:RAPID-Footer
+Widget:RAPID-Transclude
